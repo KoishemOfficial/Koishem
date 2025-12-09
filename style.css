@@ -32,11 +32,11 @@ body {background: #1a1a1a; color: #fff; height: 100vh; display: flex;}
 .content img {max-width: 100%; border-radius: 8px; margin-bottom: 16px;}
 .content video {max-width: 100%; border-radius: 8px; margin-bottom: 16px;}
 
-.content h1 {font-size: 200%}
-.content h2 {font-size: 170%}
-.content h3 {font-size: 150%}
-.content h4 {font-size: 120%}
-.content p {font-size: 100%}
+.content h1 {font-size: clamp(18px, 4vw, 36px);}
+.content h2 {font-size: clamp(16px, 3.5vw, 30px);}
+.content h3 {font-size: clamp(14px, 3vw, 24px);}
+.content h4 {font-size: clamp(12px, 2.5vw, 20px);}
+.content p  {font-size: clamp(10px, 2vw, 16px);}
 
 .content hr {background-color: #6c6c6c; height: 1px; border: none;}
 
