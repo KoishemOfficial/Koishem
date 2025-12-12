@@ -131,22 +131,37 @@ body {
     transition: 0.2s;
 }
 
-.file:hover,
 .file.active {
-    background: #333;
+    background: #333333;
+    color: #ffd000;
+    font-weight: bold;
+}
+
+.file:hover {
+    background: #333333;
+    font-weight: bold;
 }
 
 .folder {
     text-transform: uppercase;
     font-weight: bold;
+    font-size: 85%;
     display: flex;
     align-items: center;
     gap: 4px;
     opacity: 0.8;
 }
 
-.indent {
+.indent11 {
     margin-left: 16px;
+}
+
+.indent2 {
+    margin-left: 32px;
+}
+
+.indent3 {
+    margin-left: 48px;
 }
 
 *::-webkit-scrollbar {

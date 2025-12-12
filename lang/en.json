@@ -1,10 +1,12 @@
 {
   "sections_title": "Sections",
-  "explorer_explorer": "▼ explorer",
+  "explorer_explorer": "explorer",
   "explorer_folder_blockbench": "▼ blockbench",
   "explorer_folder_mapdev": "▼ mapdev",
-  "explorer_file_main": "main.md",
-  "explorer_file_blockbench": "gallery.md",
+  "explorer_folder_projects": "▼ projects",
+  "explorer_file_main": "Welcome.md",
+  "explorer_file_blockbench": "Gallery.md",
+  "explorer_file_my_studio": "MyStudio.md",
 
   "content_main_welcome": "👋 Welcome to my website!",
   "content_main_line1": "Hey! I'm Koishem.",
