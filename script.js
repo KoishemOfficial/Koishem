@@ -1,3 +1,6 @@
+const sidebar = document.querySelector('.sidebar');
+const menuToggle = document.querySelector('.menu-toggle');
+
 const files = document.querySelectorAll('.file');
   const contentBlocks = document.querySelectorAll('.content > div');
 
@@ -9,15 +12,19 @@ const files = document.querySelectorAll('.file');
 
   files.forEach(file => {
     file.addEventListener('click', () => {
-      files.forEach(f => f.classList.remove('active'));
-      file.classList.add('active');
+        files.forEach(f => f.classList.remove('active'));
+        file.classList.add('active');
 
-      const targetId = file.dataset.target;
-      showContent(targetId);
+        const targetId = file.dataset.target;
+        showContent(targetId);
 
-      updateTOC();
+        updateTOC();
+
+        if (window.innerWidth <= 768) {
+            sidebar.classList.remove('active');
+        }
     });
-  });
+});
 
   document.querySelector('.file[data-target="main"]').click();
   updateTOC();
@@ -117,4 +124,8 @@ function setLang(lang, animated = true) {
 
 window.addEventListener("load", () => {
   document.body.classList.add("loaded");
+});
+
+menuToggle.addEventListener('click', () => {
+    sidebar.classList.toggle('active');
 });
